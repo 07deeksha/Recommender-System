@@ -19,9 +19,9 @@ with open(r'C:\Users\Deeksha\Desktop\TrendPulse\Tp\vocab.pkl', 'rb') as f:
 encoder = EncoderCNN(256).eval()  # Set embedding size to 256
 decoder = DecoderRNN(256, 512, len(vocab), 2)  # Adjust hidden size and number of layers if needed
 encoder.load_state_dict(
-    torch.load(r'C:\Users\Deeksha\Desktop\TrendPulse\Tp\encoder-250-1.ckpt', map_location=torch.device('cpu')))
+    torch.load(r'C:\Users\Deeksha\Desktop\TrendPulse\Tp\Model.ckpt\encoder-250-1.ckpt', map_location=torch.device('cpu')))
 decoder.load_state_dict(
-    torch.load(r'C:\Users\Deeksha\Desktop\TrendPulse\Tp\decoder-250-1.ckpt', map_location=torch.device('cpu')))
+    torch.load(r'C:\Users\Deeksha\Desktop\TrendPulse\Tp\Model.ckpt\decoder-250-1.ckpt', map_location=torch.device('cpu')))
 encoder.eval()
 decoder.eval()
 
@@ -262,3 +262,4 @@ elif page == "MUSIC-^-PULSE":
 #     args = parser.parse_args()
 #     main(args)
 #
+
