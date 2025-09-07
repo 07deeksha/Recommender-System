@@ -15,7 +15,7 @@ from music import recommend, recd_song
 with open(r'C:\Users\Deeksha\Desktop\TrendPulse\Tp\vocab.pkl', 'rb') as f:
     vocab = pickle.load(f)
 
-# Load the trained model
+# Load the trained model 
 encoder = EncoderCNN(256).eval()  # Set embedding size to 256
 decoder = DecoderRNN(256, 512, len(vocab), 2)  # Adjust hidden size and number of layers if needed
 encoder.load_state_dict(
@@ -262,4 +262,5 @@ elif page == "MUSIC-^-PULSE":
 #     args = parser.parse_args()
 #     main(args)
 #
+
 
