@@ -3,9 +3,29 @@ This system employs a sophisticated CNN-RNN-LSTM architecture to extract rich fe
 This system contributes to deliver a clever solution that will expand the reach of digital material.
 
 ## **Prerequisites**
-*Anaconda Distribution (https://www.anaconda.com/distribution/)
+* Anaconda Distribution (https://www.anaconda.com/distribution/)
 
-*Python 3.7.8 (https://www.python.org/downloads/)
+* Keras 2.13.1
+
+* Numpy
+
+* OpenCV 0.27.0
+
+* Pandas 1.5.3
+
+* Pillow 9.5.
+
+* Python 3.8.0 (https://www.python.org/downloads/)
+
+* Pytorch 2.2.2
+
+* Scikit-learn 1.3.2
+
+* Streamlit 1.33.0
+
+* Tensorflow 2.13.0
+
+* Torchvision 0.17.2
 
 ## **Hashtags Recommendation System**
 The system design is based on attention mechanism to focus on important features of an image. The model takes an image as input and produces a one-hot encoded list of hashtags.
@@ -20,6 +40,11 @@ Here, the predict.py file uses the saved model (encoder and decoder) on the web 
 > The encoder model file could not be uploaded to git due to its huge size.
 
 ## **Music Recommender System**
+The recommendation engine for the Music utilized content-based filtering based on Genre selected by the user, classified using user ratings.Key features such as user ratings, album/movie names, and artist names are extracted and combined to form tags representing each song. Using these tags, a CountVectorizer is employed to transform the textual data into numerical vectors. Cosine similarity is then computed between these vectors to measure the similarity between songs.
+
+For genre-based recommendations, the system filters the dataset based on the user-input genre, calculates similarity scores, and retrieves the top similar songs. Similarly, song-based recommendations take a user-selected song, find its index, compute similarity scores, and return a list of similar songs. Both functions utilize cosine similarity to identify songs with similar characteristics.
+
+
 
 
 
