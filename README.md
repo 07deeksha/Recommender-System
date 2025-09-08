@@ -5,7 +5,7 @@ This system contributes to deliver a clever solution that will expand the reach 
 ## **Prerequisites**
 *Anaconda Distribution (https://www.anaconda.com/distribution/)
 
-*Python 3.7.3 (https://www.python.org/downloads/)
+*Python 3.7.8 (https://www.python.org/downloads/)
 
 ## **Hashtags Recommendation System**
 The system design is based on attention mechanism to focus on important features of an image. The model takes an image as input and produces a one-hot encoded list of hashtags.
